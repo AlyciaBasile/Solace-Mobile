@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Solace-Mobile PWA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An ai-driven Progressive Web App for interacting with Solace-Evolution.">
+</head>
+<body>
+<div id="app">
+<h1>Welcome to Solace-Mobile PWA</h1>
+<div id="message">Loading ai interaction...</div>
+</div>
+
+<script>
+window.onload = function() {
+    document.getElementById('message').innerHTML = "Connecting to Solace-Evolution...";
+    setTimeout(() => {
+        document.getElementById("message").innerHTML = "AI Interaction Now Active";
+    }, 3000);
+};
+</script>
+</body>
+</html>
